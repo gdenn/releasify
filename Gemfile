@@ -36,11 +36,14 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# twitter bootstrap css framework
+# Twitter bootstrap css framework
 gem 'bootstrap', '~> 4.1.3'
 
-# required by bootstrap
+# Required by bootstrap
 gem 'sprockets-rails', :require => 'sprockets/railtie'
+
+# Load config variables from file
+gem 'envyable'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
