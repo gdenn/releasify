@@ -5,3 +5,26 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+   
+Environment.create([
+  {
+    name: "a9s-s1",
+    version: "v1.2.3",
+    last_update: Date.parse('31-12-2010')
+  },
+  {
+    name: "a9s-s2",
+    version: "v1.2.4",
+    last_update: Date.parse('31-12-2010')
+  },
+  {
+    name: "a9s-s3",
+    version: "v1.2.5",
+    last_update: Date.parse('31-12-2010')
+  },
+  {
+    name: "a9s-s4",
+    version: "v1.2.6",
+    last_update: Date.parse('31-12-2010')
+  },
+])
