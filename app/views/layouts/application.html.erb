@@ -19,7 +19,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Environments <span class="sr-only">(current)</span></a>
+            <%= link_to "Environment", controller: :environments_controller, :action => "index" class: "nav-link" %>
           </li>
           <li class="nav-item disabled">
             <a class="nav-link" href="#">Users <span class="sr-only">(current)</span></a>
@@ -39,10 +39,6 @@
       <div class="mt-5">
         <%= yield %>
       </div>
-      <%# <div class="row"> %>
-      <%#   <div class="col-lg-12 text-center mt-5"> %>
-        <%# </div> %>
-      <%# </div> %>
     </div>
   </body>
 </html>
