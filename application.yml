@@ -1,0 +1,12 @@
+---
+applications:
+- name: releasify
+  memory: 128M
+  host: releasify
+  domain: releasify.apps.a9s-s1.de
+  env:
+    HOST:
+    PORT:
+    USER:
+    PASSWORD:
+    DB:
