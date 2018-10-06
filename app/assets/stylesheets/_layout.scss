@@ -1,0 +1,61 @@
+body
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: $primary-color;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $font-color;
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+#main-frame {
+  display: flex;
+  flex-direction: row;
+}
+
+#left-nav {
+  display: flex;
+  box-shadow: 0 0 20px #000;
+  background-color: $tenary-color;
+  width: 20%;
+  max-width: 60px;
+  height: 100%;
+}
+
+#middle-frame {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-color;
+  width: 100%;
+  height: 100%;
+}
+
+#top-menu {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  max-height: 80px;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15px;
+}

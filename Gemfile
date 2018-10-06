@@ -36,10 +36,10 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# Twitter bootstrap css framework
-gem 'bootstrap', '~> 4.1.3'
+gem 'font-awesome-rails'
 
-# Required by bootstrap
+gem 'jquery-rails'
+
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 # Load config variables from file

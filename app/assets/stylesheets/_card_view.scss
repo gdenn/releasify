@@ -1,0 +1,56 @@
+.card-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 25%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #141414;
+  border-radius: 3px;
+  background-color: $quadrary-color;
+  height: 300px;
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+
+.card:hover {
+  filter: brightness(120%);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.card-upper {
+  position: relative;
+  bottom: 20px;
+  height: 30px;
+}
+
+.card-upper p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.card-lower {
+  margin-top: 20px;
+}
+
+.card-upper h1 {
+  padding-left: 40px;
+}
+
+.card-lower p {
+  padding-left: 40px;
+}
+
+.search-bar {
+
+}

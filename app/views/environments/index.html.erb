@@ -1,7 +1,152 @@
-<div class="container-fluid text-center">
-  <div class="row">
+<section>
+  <div class="card-view">
     <% @environments.each do |environment| %>
-      <%= render partial: "environment", object: environment %>
+      <div class="card">
+        <div class="card-upper"/>
+          <p><%= environment.name %></p>
+        </div>
+        <div class="card-lower"/>
+          <p>version: <%= environment.version %></p>
+          <p>last update: <%= environment.last_update.to_s.gsub!("-", ".") %></p>
+        </div>
+        <div>
+          <p class="list-view-title">pipelines:</p>
+          <ul class="pipeline-list-view">
+            <li>
+              <div class="status-icon">
+                <%= fa_icon "heartbeat", class: "heartbeating status-icon fa-2x warning-color"%>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="no-margin">pipeline 1</a>
+                <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+                <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+              </div>
+            </li>
+            <li>
+              <div class="status-icon">
+                <%= fa_icon "heart", class: "status-icon fa-2x success-color"%>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="no-margin">pipeline 1</a>
+                <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+                <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+              </div>
+            </li>
+            <li>
+              <div class="status-icon">
+                <%= fa_icon "times", class: "status-icon fa-2x error-color"%>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="no-margin">pipeline 1</a>
+                <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+                <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+              </div>
+            </li>
+            <li>
+              <div class="status-icon">
+                <%= fa_icon "heartbeat", class: "heartbeating status-icon fa-2x warning-color"%>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="no-margin">pipeline 1</a>
+                <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+                <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+              </div>
+            </li>
+            <li>
+              <div class="status-icon">
+                <%= fa_icon "heartbeat", class: "heartbeating status-icon fa-2x warning-color"%>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="no-margin">pipeline 1</a>
+                <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+              </div>
+              <div class="pipeline-list-item-section">
+                <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+                <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="pipeline-list-view">
+          <li>
+            <div class="status-icon">
+              <%= fa_icon "heartbeat", class: "heartbeating status-icon fa-2x warning-color"%>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="no-margin">pipeline 1</a>
+              <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+              <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+            </div>
+          </li>
+          <li>
+            <div class="status-icon">
+              <%= fa_icon "heart", class: "status-icon fa-2x success-color"%>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="no-margin">pipeline 1</a>
+              <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+              <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+            </div>
+          </li>
+          <li>
+            <div class="status-icon">
+              <%= fa_icon "times", class: "status-icon fa-2x error-color"%>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="no-margin">pipeline 1</a>
+              <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+              <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+            </div>
+          </li>
+          <li>
+            <div class="status-icon">
+              <%= fa_icon "heartbeat", class: "heartbeating status-icon fa-2x warning-color"%>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="no-margin">pipeline 1</a>
+              <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+              <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+            </div>
+          </li>
+          <li>
+            <div class="status-icon">
+              <%= fa_icon "heartbeat", class: "heartbeating status-icon fa-2x warning-color"%>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="no-margin">pipeline 1</a>
+              <a class="no-margin text-muted"><%= fa_icon "spinner" %> job 1</a>
+            </div>
+            <div class="pipeline-list-item-section">
+              <a class="build-no"><%= fa_icon "hashtag" %> 554</a>
+              <a class="text-muted"><%= fa_icon "hourglass", class: "fa-1x" %> 3 h</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     <% end %>
   </div>
-</div>
+</section>

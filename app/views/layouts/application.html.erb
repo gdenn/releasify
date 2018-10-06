@@ -1,44 +1,25 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Releasify</title>
+    <title> Releasify </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= tag :meta, name: :psj, action: action_name, controller: controller_name %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%= yield :js %>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Releasify</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <%= link_to "Environment", controller: :environments_controller, :action => "index" class: "nav-link" %>
-          </li>
-          <li class="nav-item disabled">
-            <a class="nav-link" href="#">Users <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item disabled">
-            <a class="nav-link" href="#">Releases <span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <!-- Page Content -->
-    <div id="main-frame" class="container-fluid">
-      <div class="mt-5">
-        <%= yield %>
+    <div id="main-frame">
+      <nav id="left-nav">
+      </nav>
+      <div id="middle-frame">
+        <nav id="top-menu">
+        </nav>
+        <div id="main-content">
+          <%= yield %>
+        </div>
       </div>
     </div>
   </body>
-</html>

@@ -1,0 +1,20 @@
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.text-muted{
+    opacity: 0.5;
+}
+
+.warning-color {
+  color: $warning-color;
+}
+
+.error-color {
+  color: $error-color;
+}
+
+.success-color {
+  color: $success-color;
+}
